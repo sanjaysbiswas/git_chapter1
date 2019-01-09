@@ -40,5 +40,51 @@ Changes to be committed:
 
 https://github.com/sanjaysbiswas/git_chapter1.git
 
+##### put file from local machine to github repository
 $ git remote add origin https://github.com/sanjaysbiswas/git_chapter1.git
+
+##### donwload repository from github lab on local machine ( with repository name)
+$ git clone https://github.com/sanjaysbiswas/git_chapter1.git
+Cloning into 'git_chapter1'...
+remote: Enumerating objects: 15, done.
+remote: Counting objects: 100% (15/15), done.
+remote: Compressing objects: 100% (10/10), done.
+remote: Total 15 (delta 1), reused 6 (delta 0), pack-reused 0
+Unpacking objects: 100% (15/15), done.
+
+##### donwload repository from github lab on local machine
+$ git pull origin master
+remote: Enumerating objects: 8, done.
+remote: Counting objects: 100% (8/8), done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), done.
+From https://github.com/sanjaysbiswas/git_chapter1
+ * branch            master     -> FETCH_HEAD
+   1a13e6c..2a5a182  master     -> origin/master
+Updating d05ff7b..2a5a182
+Fast-forward
+ component1.txt   |  2 +-
+ component_online |  1 +
+ get-exercise.txt | 44 ++++++++++++++++++++++++++++++++++++++++++++
+ 3 files changed, 46 insertions(+), 1 deletion(-)
+ create mode 100644 component_online
+ create mode 100644 get-exercise.txt
+
+#### pull github to local repository
+$ git fetch origin
+#### local commit to your working directory ( pull old version)
+$ git merge 2d0be335f98b09ff26e8969413d4d63411adbd9d
+Already up to date.
+
+
+Sanjay.Biswas@TBSLT00194 MINGW64 /e/github (master)
+$ git branch
+* master
+
+$ git branch feature1
+
+$ git branch
+  feature1
+* master
 
